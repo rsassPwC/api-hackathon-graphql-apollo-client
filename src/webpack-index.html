@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>App Catalog</title>
+    <meta name="generator" content="App Catalog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="App Catalog">
+
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="node_modules/@appkit-web-components/base/lib/appkit-base.min.css">
+    <link rel="stylesheet" href="node_modules/@appkit-web-components/fonts/lib/appkit-font-faces.min.css">
+    <link rel="stylesheet" href="node_modules/@appkit-web-components/fonts/lib/appkit-icon-font-faces.min.css">
+    <link rel="stylesheet" href="node_modules/@appkit-web-components/fonts/lib/appkit-icon.min.css">
+
+    <base href="/">
+
+    <script>
+        window.process = {
+            env: {
+                NODE_ENV: 'develop'
+            }
+        };
+    </script>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        html {
+            overflow-y: scroll;
+        }
+        
+        body {
+            background: #eee;
+            display: flex;
+            justify-content: center;
+        }
+        
+        app-catalog {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <app-catalog></app-catalog>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+  </body>
+  
+</html>

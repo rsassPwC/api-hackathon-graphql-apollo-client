@@ -1,0 +1,7 @@
+{
+  "name": "App Catalog",
+  "short_name": "App Catalog",
+  "description": "Displays multiple Apps",
+  "start_url": "/",
+  "display": "standalone"
+}

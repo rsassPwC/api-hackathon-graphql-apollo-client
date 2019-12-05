@@ -1,0 +1,35 @@
+{
+  "entrypoint": "index.html",
+  "shell": "out/components/app-catalog/app-catalog.js",
+  "sources": [
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "push-manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/**",
+    "node_modules/@appkit-web-components/base/**",
+    "node_modules/@appkit-web-components/fonts/**"
+  ],
+  "builds": [
+    {
+      "name": "esm-bundled",
+      "browserCapabilities": [
+        "es2015",
+        "modules"
+      ],
+      "js": {
+        "minify": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": false,
+      "addServiceWorker": false
+    }
+  ],
+  "moduleResolution": "node",
+  "npm": true
+}
